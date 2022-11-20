@@ -1,0 +1,30 @@
+{
+    "name": "iabdullahbeker/efatora-sdk",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Iabdullahbeker\\EfatoraSdk\\": "src/"
+        }
+    },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Iabdullahbeker\\EfatoraSdk\\Providers\\EFatoraSdkServiceProvider"
+      ],
+      "aliases": {
+        "Excel": "Iabdullahbeker\\EfatoraSdk\\Facades\\EFatoraSdk"
+      }
+    }
+  },
+    "authors": [
+        {
+            "name": "Abdullah Mohamed",
+            "email": "iabdullah.beker@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/support": "^9.40",
+        "guzzlehttp/guzzle": "^7.2"
+    }
+}
