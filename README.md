@@ -16,6 +16,10 @@ This sdk helps developers to integrate easily with egypt Efatora.
 ### Sample code to coding the products
 
 ```php
+use Iabdullahbeker\EfatoraSdk\Facades\EFatoraSdk;
+use Iabdullahbeker\EfatoraSdk\Utils\EfatoraProduct;
+use Iabdullahbeker\EfatoraSdk\Utils\EfatoraProducts;
+
 $product1 = new EfatoraProduct([
             "parentCode"=>"99999999",
             "productId"=> "123456",
@@ -47,6 +51,13 @@ $product1 = new EfatoraProduct([
 ### Sample code to submit the invoice document
 
 ```php
+use Iabdullahbeker\EfatoraSdk\Utils\EfatoraReceiptItem;
+use Iabdullahbeker\EfatoraSdk\Facades\EFatoraSdk;
+use Iabdullahbeker\EfatoraSdk\Utils\DocumentReceiver;
+use Iabdullahbeker\EfatoraSdk\Utils\EfatoraDocuments;
+use Iabdullahbeker\EfatoraSdk\Utils\InvoiceLines;
+
+
         $item = new EfatoraReceiptItem([
             'id' => '123456',
             'item_type' => 'EGS',
